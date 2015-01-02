@@ -22,6 +22,9 @@ export function uniqueDigitProducts(a: number[]): number {
     const products: number[] = [];
     a.forEach(num => {
         const product = getDigitProduct(num);
+        if (!products.includes(product)) {
+            products.push(product);
+        };
     });
 };
 
