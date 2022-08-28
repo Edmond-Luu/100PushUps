@@ -18,11 +18,11 @@ function countChars(str) {
     const counts = {};
     const noSpace = str.replace(" ", "");
     const splitStr = noSpace.split("").map(letter => letter.toLowerCase());
-    splitStr.forEach(letter => {
-        if (!counts.hasOwnProperty(letter)) {
-            counts[letter] = 1
+    splitStr.forEach(char => {
+        if (!counts.hasOwnProperty(char)) {
+            counts[char] = 1
         } else {
-            counts[letter] += 1;
+            counts[char] += 1;
         };
     });
     return counts;
