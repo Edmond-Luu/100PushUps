@@ -19,11 +19,12 @@ function countChars(str) {
     const splitStr = str.split("");
     splitStr.forEach(letter => {
         if (!counts.hasOwnProperty(letter)) {
-
+            counts[letter] = 1
         } else {
 
         };
     });
+    return counts;
 };
 
 console.log(countChars("Peggy Porth"));
