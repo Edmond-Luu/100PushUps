@@ -11,7 +11,6 @@ export function factorializeANumber(num: number): number {
         total *= i;
     };
     return total;
-
 };
 
 console.log(factorializeANumber(5));
