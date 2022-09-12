@@ -18,7 +18,11 @@ function countChars(str) {
     const counts = {};
     const splitStr = str.split("");
     splitStr.forEach(letter => {
+        if (!counts.hasOwnProperty(letter)) {
 
+        } else {
+
+        };
     });
 };
 
