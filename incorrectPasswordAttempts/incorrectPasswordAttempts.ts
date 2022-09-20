@@ -20,7 +20,6 @@ export function incorrectPasscodeAttempts(passcode: string, attempts: string[]):
             return true;
         }
     }
-
     return false;
 }
 
