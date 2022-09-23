@@ -1,13 +1,23 @@
 export function incorrectPasscodeAttempts(passcode: string, attempts: string[]): boolean {
-    let attemptCount = 0;
-    for(let guess of attempts){
-        if(guess === passcode){
-            attemptCount ++
-            if (attemptCount = 10) {
-                return true;
-            }
-        } else {
-            attemptCount = 0;
+    // let attemptCount = 0;
+    // for(let guess of attempts){
+    //     if(guess === passcode){
+    //         attemptCount ++
+    //         if (attemptCount = 10) {
+    //             return true;
+    //         }
+    //     } else {
+    //         attemptCount = 0;
+    //     }
+    // }
+    // return false;
+
+
+    let failedAttempts = 0;
+    for (let attempt of attempts){
+        failedAttempts = attempt === passcode ? 0 : failedAttempts++
+        if (failedAttempts === 10) {
+            return true;
         }
     }
     return false;
