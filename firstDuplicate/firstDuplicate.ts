@@ -7,7 +7,7 @@ export function firstDuplicate(a: number[]): number {
             return a[i];
         };
     };
-    return -1;;
+    return -1;
 };
 
 console.log(firstDuplicate([2, 1, 3, 5, 3, 2]));
