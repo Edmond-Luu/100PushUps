@@ -1,10 +1,10 @@
 export function firstDuplicate(a: number[]): number {
     const arrayValues = [];
     for (let i = 0; i < a.length; i++) {
-        if (!arrayValues.includes(a[i])) {
-            arrayValues.push(a[i]);
-        } else {
+        if (arrayValues.includes(a[i])) {
             return a[i];
+        } else {
+            arrayValues.push(a[i]);
         };
     };
     return -1;
