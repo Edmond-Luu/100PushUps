@@ -1,9 +1,7 @@
 export function electionsWinners(votes: number[], k: number): number {
     const winners: numbers[] = [];
     const currentWinner = Math.max(...votes);
-
-    votes.forEach(candidate => candidate + k > currentWinner ? winners.push(candidate) : "")
-
+    votes.forEach(candidate => candidate + k > currentWinner ? winners.push(candidate) : "");
     return winners.length;
 }
 
