@@ -7,7 +7,7 @@ export function depositProfit(deposit: number, rate: number, threshold: number):
     // return yearCount;
 
     let year = 0;
-    let account = deposit
+    let account = deposit;
 
     while (account < threshold) {
         account *= 1.2;
