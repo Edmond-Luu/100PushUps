@@ -27,6 +27,7 @@ How can you reuse the function you just wrote?
 */ 
 
 function toTitleCase(str){
+    const strArr = str.split(" ");
     
 }
 
