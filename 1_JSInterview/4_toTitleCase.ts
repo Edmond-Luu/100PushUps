@@ -28,7 +28,10 @@ How can you reuse the function you just wrote?
 
 function toTitleCase(str){
     const strArr = str.split(" ");
-    return strArr;
+    for(let i = 0; i < strArr.length; i++){
+        strArr[i] = strArr[i][0].toUpperCase() + strArr[i].slice(1, strArr[i].length)
+    }
+    return strArr.join(" ");
 }
 
 // Test your functions
