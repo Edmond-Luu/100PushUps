@@ -16,8 +16,8 @@ Hint: Trying using slice() and .toUpperCase()
 */
 
 function capitalizeWord(word){
-    const wordArr = word.split("");
-    return wordArr;
+    const wordArr = word.split(" ");
+    return;
 }
 
 /* 
