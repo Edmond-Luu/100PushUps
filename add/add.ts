@@ -1,4 +1,5 @@
 export function add(param1: number, param2: number): number {
+    
 }
 
 export function add2(...param1: number[]): number {
