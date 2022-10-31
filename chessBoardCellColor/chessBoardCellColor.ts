@@ -10,18 +10,23 @@ export function chessBoardCellColor(cell1: string, cell2: string): boolean {
         "h": 8
     }
 
-    const cell1xNum: number = board[cell1[0].toLowerCase()];
-    const cell1yNum: number = parseInt(cell1[1])
-    const cell1Total: number = cell1xNum + cell1yNum;
+    // const cell1xNum: number = board[cell1[0].toLowerCase()];
+    // const cell1yNum: number = parseInt(cell1[1])
+    // const cell1Total: number = cell1xNum + cell1yNum;
 
-    const cell2xNum: number = board[cell2[0].toLowerCase()];
-    const cell2yNum: number = parseInt(cell2[1])
-    const cell2Total: number = cell2xNum + cell2yNum;
+    // const cell2xNum: number = board[cell2[0].toLowerCase()];
+    // const cell2yNum: number = parseInt(cell2[1])
+    // const cell2Total: number = cell2xNum + cell2yNum;
 
-    return cell1Total % 2 === cell2Total % 2;
+    // return cell1Total % 2 === cell2Total % 2;
+
+    const total1 = (board[cell1[0].toLowerCase()] + parseInt(cell1[1])) % 2;
+    const total2 = (board[cell2[0].toLowerCase()] + parseInt(cell2[1])) % 2;
+    return total1 === total2;
+
 
 
 }
 
-// console.log(chessBoardCellColor('A1', 'C3'));
-// console.log(chessBoardCellColor('A1', 'H3'));
+console.log(chessBoardCellColor('A1', 'C3'));
+console.log(chessBoardCellColor('A1', 'H3'));
