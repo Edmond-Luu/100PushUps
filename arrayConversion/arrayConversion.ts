@@ -27,5 +27,4 @@ export function arrayConversion(inputArray: number[]): number {
     return inputArray[0];
 }
 
-
 console.log(arrayConversion([1, 2, 3, 4, 5, 6, 7, 8]));
