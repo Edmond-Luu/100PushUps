@@ -3,23 +3,13 @@ export function arrayConversion(inputArray: number[]): number {
 
     while (inputArray.length !== 1) {
         if (isOdd) {
-            for (let i = 0; i < inputArray.length; i += 2) {
-                inputArray.splice(i, 1, inputArray[i] + inputArray[i + 1]);
+            for (let i = 0; i < inputArray.length; i++) {
+                inputArray.splice(i, 2, inputArray[i] + inputArray[i + 1]);
             }
-
-            for (let i = 1; i < inputArray.length; i++) {
-                inputArray.splice(i, 1);
-            }
-
             isOdd = false;
-        }
-        else {
-            for (let i = 0; i < inputArray.length; i += 2) {
-                inputArray.splice(i ,1, inputArray[i] * inputArray[i + 1]);
-            }
-
-            for (let i = 1; i < inputArray.length; i++) {
-                inputArray.splice(i, 1);
+        } else {
+            for (let i = 0; i < inputArray.length; i++) {
+                inputArray.splice(i, 2, inputArray[i] * inputArray[i + 1]);
             }
             isOdd = true;
         }
