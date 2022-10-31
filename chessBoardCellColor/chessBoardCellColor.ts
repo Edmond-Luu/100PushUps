@@ -1,5 +1,5 @@
 export function chessBoardCellColor(cell1: string, cell2: string): boolean {
-    const xCoord = {
+    const board = {
         "a": 1,
         "b": 2,
         "c": 3,
@@ -10,16 +10,10 @@ export function chessBoardCellColor(cell1: string, cell2: string): boolean {
         "h": 8
     }
 
-    const cell1xNum: number = xCoord[cell1[0].toLowerCase()];
-    const cell1yNum: number = parseInt(cell1[1])
-    const cell1Total: number = cell1xNum + cell1yNum;
+    const cell1Total: number = (board[cell1[0].toLowerCase()] + parseInt(cell1[1])) % 2
+    const cell2Total: number = (board[cell2[0].toLowerCase()] + parseInt(cell2[1])) % 2
+    return cell1Total === cell2Total;
 
-    const cell2xNum: number = xCoord[cell2[0].toLowerCase()];
-    const cell2yNum: number = parseInt(cell2[1])
-    const cell2Total: number = cell2xNum + cell2yNum;
-
-
-    
 }
 
 console.log(chessBoardCellColor('A1', 'C3'));
