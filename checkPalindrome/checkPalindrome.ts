@@ -3,8 +3,9 @@ export function checkPalindrome(inputString: string): boolean {
     const reversed = lowerCased.split("").reverse().join("");
     return reversed === lowerCased;
 
-    // const originalLowerCase = inputString.toLowerCase();
-    // return originalLowerCase.split("").reverse().join("") === originalLowerCase;
+    // const originalWord = inputString.toLowerCase();
+    // const reversedWord = originalWord.split("").reverse().join("")
+    // return originalWord === reversedWord;
 
 
 
