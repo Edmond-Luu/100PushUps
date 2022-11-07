@@ -6,6 +6,7 @@ export function compareIntegers(a: string, b: string): string {
     } else {
         return "less";
     };
+    
 };
 
 console.log(compareIntegers('12', '13'));
