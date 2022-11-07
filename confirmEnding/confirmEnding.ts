@@ -5,7 +5,7 @@ export function confirmEnding(str: string, target: string) {
     // return strArr.join("") === targetArr.join("");
 
     const start = str.length - target.length;
-    return str.substring(start, str.length) === target;
+    return str.substring(start) === target;
 }
 
 console.log(confirmEnding("Abstraction", "action"));
