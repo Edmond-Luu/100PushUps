@@ -1,6 +1,6 @@
 export function containsCloseNums(nums: number[], k: number): boolean {
-    for (let i=1; i<k; i++){
-        if (nums[i] === nums[i + k]){
+    for (let i = 1; i <= k; i++) {
+        if (nums[i] === nums[i + k]) {
             return true
         }
     }
