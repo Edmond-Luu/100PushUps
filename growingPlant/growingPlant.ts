@@ -9,8 +9,6 @@ export function growingPlant(upSpeed: number, downSpeed: number, desiredHeight: 
         }
         days++;
     }
-
-
     return days;
 };
 
