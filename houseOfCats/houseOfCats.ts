@@ -1,10 +1,10 @@
 export function houseOfCats(legs: number): number[] {
-    const peopleCount = [];
+    const peopleCount: number[] = [];
 
-    peopleCount.push((legs % 4)/2)
-
-    peopleCount.push((legs/4))
-
+    while (legs >= 0){
+        peopleCount.unshift(legs/2);
+        legs -= 4
+    };
 
     return peopleCount
 }
