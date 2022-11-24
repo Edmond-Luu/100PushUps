@@ -2,6 +2,9 @@ export function integerToStringOfFixedWidth(number: number, width: number): stri
     let newStr = [];
     const strArr = number.toString().split("");
     let strLength = strArr.length;
+    if (strLength === width) {
+        return number;
+    }  
     for(let i = 0; i < width; i++){
         while(strLength < width){
             strArr.unshift("0")
@@ -10,6 +13,9 @@ export function integerToStringOfFixedWidth(number: number, width: number): stri
         newStr.push(strArr[i])
     }    
     return newStr.join("");
+
+
+
 }
 
 console.log(integerToStringOfFixedWidth(1234, 2));
