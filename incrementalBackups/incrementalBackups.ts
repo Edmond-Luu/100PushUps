@@ -1,5 +1,5 @@
 export function incrementalBackups(lastBackupTime: number, changes: number[][]): number[] {
-    // const backupSet = new Set();
+    // const backupSet = new Set
     // changes = changes.filter(file => file[0] > lastBackupTime)
     // for (let file of changes) {
     //     backupSet.add(file[1])
