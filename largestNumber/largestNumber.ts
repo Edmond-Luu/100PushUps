@@ -6,12 +6,14 @@ export function largestNumber(n: number): number {
     // return parseInt(largest)
 
 
+    // let word = "";
+    // for (let i = 0; i < n; i++) {
+    //     word = word.concat("9");
+    // }
+    // return parseInt(word);
 
-    let word = "";
-    for (let i = 0; i < n; i++) {
-        word = word.concat("9");
-    }
-    return parseInt(word);
+
+    return "9".repeat(n)
 }
 
 console.log(largestNumber(2));
