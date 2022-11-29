@@ -13,7 +13,7 @@ export function largestNumber(n: number): number {
     // return parseInt(word);
 
 
-    return "9".repeat(n)
+    return parseInt("9".repeat(n))
 }
 
 console.log(largestNumber(2));
