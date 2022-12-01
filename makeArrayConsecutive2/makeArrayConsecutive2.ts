@@ -5,6 +5,10 @@ export function makeArrayConsecutive2(statues: number[]): number {
     //     !statues.includes(i) ? missingStatuesCount ++ : ""
     // }
     // return missingStatuesCount;
+
+
+    let count;
+    return count;
 }
 
 console.log(makeArrayConsecutive2([6, 2, 3, 8]));
