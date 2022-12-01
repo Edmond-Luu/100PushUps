@@ -15,10 +15,10 @@ export function longestDigitsPrefix(inputString: string): string {
 
     for (let char of inputString) {
         const num = parseInt(char)
-        if (!num) {
-            break;
-        } else {
+        if (num) {
             prefix += char
+        } else {
+            break;
         }
     }
     return prefix;
