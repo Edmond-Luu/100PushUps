@@ -8,6 +8,7 @@ export function makeArrayConsecutive2(statues: number[]): number {
 
 
     let count;
+    const sortedStatues = statues.sort((a, b) => a - b);
     return count;
 }
 
