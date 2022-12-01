@@ -7,10 +7,15 @@ export function makeArrayConsecutive2(statues: number[]): number {
     // return missingStatuesCount;
 
 
-    let count;
+    let count = 0;
     const sortedStatues = statues.sort((a, b) => a - b);
     const min = statues[0];
     const max = statues[statues.length - 1];
+    for (let i = min; i < max; i++) {
+        if (!sortedStatues.includes(i)) {
+            count++;
+        }
+    }
     return count;
 }
 
