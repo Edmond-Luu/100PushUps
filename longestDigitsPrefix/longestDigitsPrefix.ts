@@ -10,6 +10,7 @@ export function longestDigitsPrefix(inputString: string): string {
     // }
 
 
+    
     const chars = inputString.split("");
     let prefix = "";
 
