@@ -10,13 +10,12 @@ export function longestDigitsPrefix(inputString: string): string {
     // }
 
 
-
-    let digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     const chars = inputString.split("");
     let prefix = "";
 
     for (let char of inputString) {
-        if (!digits.includes(char)) {
+        const num = parseInt(char)
+        if (!num) {
             break;
         } else {
             prefix += char
