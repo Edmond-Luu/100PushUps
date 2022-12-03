@@ -1,13 +1,18 @@
 export function matrixElementsSum(matrix: any[][]): number {
-    let totalPrice = matrix[0].reduce((a, b) => a + b);
-    for (let i = 1; i < matrix.length; i++) {
+    let priceTotal = 0;
+    const bannedIndex: number[] = [];
+
+    for (let i = 0; i < matrix.length; i++) {
         for (let j = 0; j < matrix[i].length; j++) {
-            if (matrix[i - 1][j] !== 0) {
-                totalPrice += matrix[i][j]
+            if (matrix[i][j] === 0) {
+                bannedIndex.push(j)
+            } else if (bannedIndex.indexOf(j) === -1) {
+                priceTotal += matrix[i][j]
             }
         }
     }
-    return totalPrice;
+
+    return priceTotal;
 }
 
 console.log(matrixElementsSum(
