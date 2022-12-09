@@ -1,5 +1,4 @@
 export function palindromeRearranging(inputString: string): boolean {
-    let isPalindrome = true;
     const splitStr = inputString.split("");
     const strLength = splitStr.length;
     const charCounts = {}
@@ -31,7 +30,6 @@ export function palindromeRearranging(inputString: string): boolean {
             return false;
         }
     }
-
 }
 
 console.log(palindromeRearranging('aabb'));
