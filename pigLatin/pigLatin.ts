@@ -29,7 +29,7 @@ export function pigLatin(str: string): string {
 
     while (true) {
         if (!vowelRegex.test(letters[0])) {
-            letters.push(letters.splice(0, 1))
+            letters.push(letters.splice(0, 1)[0])
         } else {
             break;
         }
