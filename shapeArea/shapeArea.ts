@@ -3,7 +3,7 @@ export function shapeArea(n: number): number {
     for (let i = 1; i < n; i++) {
         area += 4 * i;
     };
-    return area
+    return area;
 }
 
 console.log(shapeArea(2));
