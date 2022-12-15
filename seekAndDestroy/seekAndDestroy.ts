@@ -1,10 +1,16 @@
 export function seekAndDestroy(arr1: number[], arr2: number[]): number[] {
-    const filteredArr = [];
-    for (let num of arr1) {
-        if (!arr2.includes(num)) {
-            filteredArr.push(num);
-        }
-    }
+    // const filteredArr = [];
+    // for (let num of arr1) {
+    //     if (!arr2.includes(num)) {
+    //         filteredArr.push(num);
+    //     }
+    // }
+    // return filteredArr;
+
+
+    const filteredArr = arr1.filter(num => {
+        return !arr2.includes(num);
+    });
     return filteredArr;
 }
 
