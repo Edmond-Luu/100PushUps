@@ -7,12 +7,12 @@ export function sortByHeight(a: number[]): number[] {
             treeIndex.push(i);
         } else {
             heights.push(a[i]);
-        }
-    }
+        };
+    };
     const sortedHeights = heights.sort((a, b) => a - b);
     for (let index of treeIndex) {
         sortedHeights.splice(index, 0, -1)
-    }
+    };
     return sortedHeights;
 }
 
