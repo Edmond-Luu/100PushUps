@@ -8,10 +8,13 @@ export function seekAndDestroy(arr1: number[], arr2: number[]): number[] {
     // return filteredArr;
 
 
-    const filteredArr = arr1.filter(num => {
-        return !arr2.includes(num);
-    });
-    return filteredArr;
+    // const filteredArr = arr1.filter(num => {
+    //     return !arr2.includes(num);
+    // });
+    // return filteredArr;
+
+
+    return arr1.filter(element => !arr2.includes(element));
 }
 
 console.log(seekAndDestroy([3, 5, 1, 2, 2], [2, 3, 5]));
