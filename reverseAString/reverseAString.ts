@@ -3,7 +3,7 @@ export function reverseAString(str: string): string {
     // return splitStr.join("")
 
 
-    return str.split("").reverse().join("")
+    return str.split("").reverse().join("");
 }
 
 console.log(reverseAString('hello'));
