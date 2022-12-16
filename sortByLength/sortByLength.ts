@@ -1,5 +1,8 @@
 export function sortByLength(inputArray: string[]): string[] {
-    return inputArray.sort((a, b) => a.length - b.length);
+    // return inputArray.sort((a, b) => a.length - b.length);
+
+
+    return inputArray.sort((str1, str2) => str1.length - str2.length);
 }
 
 console.log(sortByLength(["abc",
