@@ -7,13 +7,13 @@ export function sumAllPrimes(num: number): number {
         }
         return true;
     };
-    const primeNumbers = [];
+    let primesTotal = 0;
     for (let i = 2; i <= num; i++) {
         if (primeCheck(i)) {
-            primeNumbers.push(i);
+            primesTotal += i;
         };
     };
-    return primeNumbers.reduce((a, b) => a + b);
+    return primesTotal;
 }
 
 console.log(sumAllPrimes(10));
