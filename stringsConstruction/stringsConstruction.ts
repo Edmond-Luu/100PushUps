@@ -4,12 +4,6 @@ export function stringsConstruction(a: string, b: string): number {
     // const bCharsCount = {};
     // let count = 0;
 
-    // for (let char of splitA) {
-    //     if (!splitB.includes(char)) {
-    //         return 0;
-    //     }
-    // }
-
     // for (let char of splitB) {
     //     bCharsCount.hasOwnProperty(char) ? bCharsCount[char]++ : bCharsCount[char] = 1;
     // };
@@ -17,6 +11,8 @@ export function stringsConstruction(a: string, b: string): number {
     //     for (let char of splitA) {
     //         if (bCharsCount.hasOwnProperty(char)) {
     //             bCharsCount[char]--;
+    //         } else{
+    //             return 0;
     //         }
     //     }
     //     count++;
