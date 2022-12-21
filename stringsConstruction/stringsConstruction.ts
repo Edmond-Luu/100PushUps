@@ -23,7 +23,7 @@ export function stringsConstruction(a: string, b: string): number {
 
 
 
-    function getAlphabetCount(string) {
+    function getAlphabetCount(string) : object {
         const chars = string.split("");
         const alphabetCount = {};
         chars.forEach(char => alphabetCount.hasOwnProperty(char) ? alphabetCount[char]++ : alphabetCount[char] = 1);
