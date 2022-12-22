@@ -1,4 +1,7 @@
 export function sumOddFibonacciNums(num: number): number {
+    if (num === 1) {
+        return 2;
+    };
     const fibonacciNums = [1, 1];
     let oddTotal = 0;
     while (fibonacciNums[fibonacciNums.length - 1] < num) {
