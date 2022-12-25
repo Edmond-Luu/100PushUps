@@ -8,11 +8,11 @@ export function sumOddFibonacciNums(num: number): number {
     //     const lastIndex = fibonacciNums.length;
     //     const nextNumber = fibonacciNums[lastIndex - 1] + fibonacciNums[lastIndex - 2];
     //     fibonacciNums.push(nextNumber);
-    // }
+    // };
     // for (let element of fibonacciNums) {
     //     if (element < num && element % 2 !== 0) {
     //         oddTotal += element;
-    //     }
+    //     };
     // };
     // return oddTotal;
 
