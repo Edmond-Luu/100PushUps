@@ -15,7 +15,7 @@ export function squareDigitsSequence(a0: number): number {
             return collection.length + 1;
         };
     };
-}
+};
 
 
 console.log(squareDigitsSequence(16));
