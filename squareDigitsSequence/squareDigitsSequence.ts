@@ -8,15 +8,15 @@ export function squareDigitsSequence(a0: number): number {
         return total;
     };
     while (true) {
+        count++;
         const newNum = splitSquare(collection[collection.length - 1])
         if (!collection.includes(newNum)) {
             collection.push(newNum);
-            count++;
         } else {
-            count++;
             return count;
         };
     };
+
 };
 
 console.log(squareDigitsSequence(16));
