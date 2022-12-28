@@ -21,12 +21,13 @@ export function squareDigitsSequence(a0: number): number {
 
     let count = 1;
     const uniqueNums = [a0];
+    
     function digitPower(num: number): number {
         const digits = num.toString().split("").map(element => parseInt(element) ** 2);
         const sum = digits.reduce((a, b) => a + b)
-
         return sum;
     };
+
     while (true) {
         count++;
         a0 = digitPower(a0);
