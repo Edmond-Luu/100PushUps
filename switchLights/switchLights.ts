@@ -1,6 +1,21 @@
 export function switchLights(a: number[]): number[] {
 
+    function swapLights(lights: number[], currentIndex: number): number[] {
+        for (let i = 0; i < currentIndex + 1; i++) {
+            lights[i] = lights[i] === 1 ? 0 : 1;
+        }
+        return lights;
+    }
+
+    let originalLights = [...a];
+
+    for (let i = 0; i < originalLights.length; i++) {
+        if (a[i] === 1) {
+            originalLights = swapLights(originalLights, i);
+        }
+    }
+    return originalLights;
 }
 
-// console.log(switchLights([1, 1, 1, 1, 1]));
-// console.log(switchLights([0, 0]));
+console.log(switchLights([1, 1, 1, 1, 1]));
+console.log(switchLights([0, 0]));
