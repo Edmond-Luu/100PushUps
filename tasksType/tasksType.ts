@@ -3,6 +3,18 @@ export function tasksTypes(deadlines: number[], day: number): number[] {
     let todayCount = 0;
     let upcomingCount = 0;
     let laterCount = 0;
+    deadlines.forEach(task => {
+        if (task <= day) {
+            todayCount++;
+        } else if (day + 7 >= task) {
+            upcomingCount++;
+        } else {
+            laterCount++;
+        }
+    })
+    counts.push(todayCount);
+    counts.push(upcomingCount);
+    counts.push(laterCount);
     return counts;
 }
 
