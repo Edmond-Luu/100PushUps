@@ -8,7 +8,7 @@ export function tasksTypes(deadlines: number[], day: number): number[] {
     //     } else {
     //         counts[2]++;
     //     }
-    // })
+    // });
     // return counts;
 
 
