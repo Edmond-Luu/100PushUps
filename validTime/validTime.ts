@@ -3,7 +3,7 @@ export function validTime(time: string): boolean {
     if (parseInt(hour) >= 24 || parseInt(min) >= 60) {
         return false;
     };
-    return hour;
+    return true;
 }
 
 console.log(validTime('13:58'));
