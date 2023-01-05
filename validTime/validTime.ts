@@ -4,7 +4,7 @@ export function validTime(time: string): boolean {
         return false;
     };
     return true;
-}
+};
 
 console.log(validTime('13:58'));
 console.log(validTime('25:51'));
