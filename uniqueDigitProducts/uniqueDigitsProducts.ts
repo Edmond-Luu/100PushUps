@@ -8,6 +8,6 @@ export function uniqueDigitProducts(a: number[]): number {
     });
     const uniqueProducts = new Set(products)
     return [...uniqueProducts].length;
-}
+};
 
 console.log(uniqueDigitProducts([2, 8, 121, 42, 222, 23]));
