@@ -17,16 +17,7 @@ function panic(str: string): string {
     if (splitStr.length === 1) {
         return splitStr[0].toUpperCase() + "!";
     } else {
-        const phrase: string[] = [];
-        for (let i = 0; i < splitStr.length; i++) {
-            phrase.push(splitStr[i].toUpperCase());
-            if (i !== splitStr.length - 1) {
-                phrase.push(" 😱 ");
-            } else {
-                phrase.push("!");
-            };
-        };
-        return phrase.join("");
+        return str.toUpperCase().split(" ").join(" 😱 ") + "!";
     };
 };
 
