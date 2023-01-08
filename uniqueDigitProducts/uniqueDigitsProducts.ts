@@ -4,10 +4,11 @@ export function uniqueDigitProducts(a: number[]): number {
         let product = 1;
         const digits = num.toString().split("").map(digit => parseInt(digit));
         digits.forEach(value => product *= value);
-        products.push(product);
+        if (!products.includes(product)) {
+            products.push(product);
+        }
     });
-    const uniqueProducts = new Set(products)
-    return [...uniqueProducts].length;
+    return products.length;
 };
 
 console.log(uniqueDigitProducts([2, 8, 121, 42, 222, 23]));
