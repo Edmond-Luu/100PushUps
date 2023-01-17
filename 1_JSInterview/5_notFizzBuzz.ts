@@ -24,6 +24,8 @@ function awardBonuses(id: number): string {
         return "JACKPOT! 1 Million and a Yacht!"
     } else if (id % 3 === 0){
         return "$100,000 bonus!"
+    } else if (id % 5 === 0){
+        return "Vacation!"
     }
 }
 
