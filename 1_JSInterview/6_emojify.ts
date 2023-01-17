@@ -43,6 +43,7 @@ function emojifyWord(word) {
         if (emojis.hasOwnProperty(noColon)) {
             return emojis[noColon];
         }
+        return noColon;
     }
     return splitWord.join("");
 }
