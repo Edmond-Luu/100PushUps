@@ -22,4 +22,8 @@ Your function's output should look something like this:
 function awardBonuses(){
 }
 
-awardBonuses();
+console.log(awardBonuses(2));
+console.log(awardBonuses(3));
+console.log(awardBonuses(5));
+console.log(awardBonuses(15));
+console.log(awardBonuses(17));
