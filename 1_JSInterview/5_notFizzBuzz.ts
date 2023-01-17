@@ -27,7 +27,7 @@ function awardBonuses(id: number): string {
     } else if (id % 5 === 0){
         return "Vacation!"
     }
-
+return ":("
 };
 
 console.log(awardBonuses(2));
