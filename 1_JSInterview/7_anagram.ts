@@ -21,6 +21,7 @@ function isAnagram(str1, str2){
 
 console.log(isAnagram("allergy", "gallery"));
 console.log(isAnagram("treasure", "measure"));
+console.log(isAnagram("rainbow", "crossbow"));
 
 
 
