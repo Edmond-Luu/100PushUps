@@ -18,6 +18,12 @@ Example output: false
 function isAnagram(str1, str2) {
     const str1Split: string[] = str1.split("").sort();
     const str2Split: string[] = str2.split("").sort();
+    for (let i = 0; i < str1Split.length; i++) {
+        if (str1Split[i] !== str2Split[i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
 console.log(isAnagram("allergy", "gallery"));
