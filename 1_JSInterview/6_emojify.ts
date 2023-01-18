@@ -63,7 +63,19 @@ Example output: "I 💜 my elephant"
 function emojifyPhrase(phrase) {
     const splitPhrase: string[] = phrase.split(" ");
     const newPhrase: string[] = [];
-    return splitPhrase;
+    splitPhrase.forEach(word => {
+        if (word[0] === ":" && word[word.length - 1] === ":") {
+            const noColon = word.slice(1, word.length - 1);
+            if (emojis.hasOwnProperty(noColon)) {
+                newPhrase.push(emojis[noColon])
+            } else {
+                newPhrase.push(noColon);
+            };
+        } else {
+            newPhrase.push(word);
+        };
+    });
+    return newPhrase.join(" ");
 }
 
 
