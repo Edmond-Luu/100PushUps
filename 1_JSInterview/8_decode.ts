@@ -41,10 +41,10 @@ reverse the strings manually.
 */
 
 function reverseStringsInArray(arr) {
-    const newArr = [];
+    const newArr: string[] = [];
     arr.forEach(str => {
         const splitStr = str.split("");
-        let reversed
+        let reversed: string = "";
     });
     return arr;
 };
