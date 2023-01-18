@@ -14,7 +14,7 @@ Example output: true
 
 function isPalindrome(str){
     
-}
+};
 
 // Test your function
 console.log(isPalindrome("abba"));
