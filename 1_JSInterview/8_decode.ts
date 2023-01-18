@@ -30,7 +30,7 @@ function reverseString(arr) {
         reversed += splitArr[i];
     };
     return reversed;
-}
+};
 
 /*
 Step 2: Now we'll reverse all strings in an array. Write a function that takes in
