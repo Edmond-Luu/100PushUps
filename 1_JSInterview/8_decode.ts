@@ -46,7 +46,7 @@ function reverseStringsInArray(arr) {
         const splitStr = str.split("");
         let reversed: string = "";
     });
-    return arr;
+    return newArr;
 };
 
 console.log(reverseString(title));
