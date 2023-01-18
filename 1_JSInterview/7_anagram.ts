@@ -22,13 +22,12 @@ function isAnagram(str1, str2) {
         if (str1Split[i] !== str2Split[i]) {
             return false;
         }
-    }
+    };
     return true;
 }
 
 console.log(isAnagram("allergy", "gallery"));
 console.log(isAnagram("treasure", "measure"));
 console.log(isAnagram("rainbow", "crossbow"));
-
 
 
