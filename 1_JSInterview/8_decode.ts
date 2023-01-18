@@ -41,6 +41,9 @@ reverse the strings manually.
 */
 
 function reverseStringsInArray(arr) {
+    arr.forEach(str => {
+        const splitStr = str.split("");
+    });
     return arr;
 }
 
