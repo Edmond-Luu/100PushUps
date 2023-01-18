@@ -45,7 +45,7 @@ function reverseStringsInArray(arr) {
         const splitStr = str.split("");
     });
     return arr;
-}
+};
 
 console.log(reverseString(title));
 console.log(reverseStringsInArray(messages));
