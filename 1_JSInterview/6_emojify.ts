@@ -76,7 +76,7 @@ function emojifyPhrase(phrase) {
         };
     });
     return newPhrase.join(" ");
-}
+};
 
 
 
