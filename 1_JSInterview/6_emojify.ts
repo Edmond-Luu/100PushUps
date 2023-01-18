@@ -70,5 +70,5 @@ function emojifyPhrase(phrase) {
 // console.log(emojifyWord(":flower:"));
 // console.log(emojifyWord("elephant"));
 
-// console.log(emojifyPhrase("I :heart: my :cat:"));
-// console.log(emojifyPhrase("I :heart: my :elephant:"));
+console.log(emojifyPhrase("I :heart: my :cat:"));
+console.log(emojifyPhrase("I :heart: my :elephant:"));
