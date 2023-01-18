@@ -20,14 +20,14 @@ Your function's output should look something like this:
  */
 
 function awardBonuses(id: number): string {
-    if(id % 3 === 0 && id % 5 === 0) {
+    if (id % 3 === 0 && id % 5 === 0) {
         return "JACKPOT! 1 Million and a Yacht!"
-    } else if (id % 3 === 0){
+    } else if (id % 3 === 0) {
         return "$100,000 bonus!"
-    } else if (id % 5 === 0){
+    } else if (id % 5 === 0) {
         return "Vacation!"
     }
-return ":("
+    return ":("
 };
 
 console.log(awardBonuses(2));

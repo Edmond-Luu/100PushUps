@@ -16,8 +16,8 @@ const emojis = {
     "angry": "😠",
     "party": "🎉",
     "heart": "💜",
-    "cat":   "🐱",
-    "dog":   "🐕"
+    "cat": "🐱",
+    "dog": "🐕"
 }
 
 /* 1. Write a function that checks if a lowercase word starts and 
@@ -34,10 +34,17 @@ Example output: "flower"
 
 Example input: "elephant"
 Example output: "elephant"
-*/ 
+*/
 
-function emojifyWord(word){
-    return;
+function emojifyWord(word) {
+    const splitWord = word.split("");
+    if (splitWord[0] === ":" && splitWord[splitWord.length - 1] === ":") {
+        const noColon = splitWord.slice(1, splitWord.length - 1).join("")
+        if (emojis.hasOwnProperty(noColon)) {
+            return emojis[noColon];
+        }
+    }
+    return splitWord.join("");
 }
 
 /* 2. Write a function to find any emoji shortcodes in a phrase.
@@ -50,17 +57,17 @@ Example output: "I 💜 my 🐱"
 
 Example input: "I :heart: my elephant"
 Example output: "I 💜 my elephant"
-*/ 
+*/
 
-function emojifyPhrase(phrase){
+function emojifyPhrase(phrase) {
     return;
 }
 
 
 
-// console.log(emojifyWord(":heart:"));
-// console.log(emojifyWord(":flower:"));
-// console.log(emojifyWord("elephant"));
+console.log(emojifyWord(":heart:"));
+console.log(emojifyWord(":flower:"));
+console.log(emojifyWord("elephant"));
 
 // console.log(emojifyPhrase("I :heart: my :cat:"));
 // console.log(emojifyPhrase("I :heart: my :elephant:"));
