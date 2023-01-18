@@ -45,6 +45,9 @@ function reverseStringsInArray(arr) {
     arr.forEach(str => {
         const splitStr = str.split("");
         let reversed: string = "";
+        for (let i = splitStr.length - 1; i >= 0; i--) {
+            reversed += splitStr[i];
+        };
     });
     return newArr;
 };
