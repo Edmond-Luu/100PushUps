@@ -37,15 +37,14 @@ Example output: "elephant"
 */
 
 function emojifyWord(word) {
-    const splitWord: string[] = word.split("");
-    if (splitWord[0] === ":" && splitWord[splitWord.length - 1] === ":") {
-        const noColon = splitWord.slice(1, splitWord.length - 1).join("");
+    if (word[0] === ":" && word[word.length - 1] === ":") {
+        const noColon = word.slice(1, word.length - 1);
         if (emojis.hasOwnProperty(noColon)) {
             return emojis[noColon];
         };
         return noColon;
     };
-    return splitWord.join("");
+    return word;
 };
 
 /* 2. Write a function to find any emoji shortcodes in a phrase.
