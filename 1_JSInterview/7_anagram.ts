@@ -13,10 +13,11 @@ Example output: true
 Example input: "rainbow", "crossbow"
 Example output: false
 
-*/ 
+*/
 
-function isAnagram(str1, str2){
-
+function isAnagram(str1, str2) {
+    const str1Split: string[] = str1.split("").sort();
+    const str2Split: string[] = str2.split("").sort();
 }
 
 console.log(isAnagram("allergy", "gallery"));
