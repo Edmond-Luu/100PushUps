@@ -37,7 +37,7 @@ Example output: "elephant"
 */
 
 function emojifyWord(word) {
-    const splitWord = word.split("");
+    const splitWord: string[] = word.split("");
     if (splitWord[0] === ":" && splitWord[splitWord.length - 1] === ":") {
         const noColon = splitWord.slice(1, splitWord.length - 1).join("");
         if (emojis.hasOwnProperty(noColon)) {
@@ -61,7 +61,8 @@ Example output: "I 💜 my elephant"
 */
 
 function emojifyPhrase(phrase) {
-    const splitPhrase = phrase.split(" ");
+    const splitPhrase: string[] = phrase.split(" ");
+    const newPhrase: string[] = [];
     return splitPhrase;
 }
 
