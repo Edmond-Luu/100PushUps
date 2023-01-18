@@ -21,7 +21,7 @@ function isAnagram(str1, str2) {
     for (let i = 0; i < str1Split.length; i++) {
         if (str1Split[i] !== str2Split[i]) {
             return false;
-        }
+        };
     };
     return true;
 }
