@@ -61,7 +61,8 @@ Example output: "I 💜 my elephant"
 */
 
 function emojifyPhrase(phrase) {
-    return;
+    const splitPhrase = phrase.split(" ");
+    return splitPhrase;
 }
 
 
