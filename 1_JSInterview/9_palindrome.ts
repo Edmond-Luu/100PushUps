@@ -15,6 +15,9 @@ Example output: true
 function isPalindrome(str) {
     const splitStr: string[] = str.split("");
     const reversedStr: string[] = [];
+    for (let i = splitStr.length - 1; i >= 0; i--) {
+        reversedStr.push(splitStr[i]);
+    };
 };
 
 // Test your function
