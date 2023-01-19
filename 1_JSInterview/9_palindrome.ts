@@ -18,11 +18,12 @@ function isPalindrome(str) {
     for (let i = splitStr.length - 1; i >= 0; i--) {
         reversedStr.push(splitStr[i]);
     };
-    for(let i = 0; i <= splitStr.length; i++){
-        if(splitStr[i] !== reversedStr[i]){
+    for (let i = 0; i <= splitStr.length; i++) {
+        if (splitStr[i] !== reversedStr[i]) {
             return false;
         };
     };
+    return false;
 };
 
 // Test your function
