@@ -21,7 +21,7 @@ function isPalindrome(str) {
     for(let i = 0; i <= splitStr.length; i++){
         if(splitStr[i] !== reversedStr[i]){
             return false;
-        }
+        };
     }
 };
 
