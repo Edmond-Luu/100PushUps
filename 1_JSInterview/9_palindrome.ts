@@ -14,6 +14,7 @@ Example output: true
 
 function isPalindrome(str) {
     const splitStr: string[] = str.split("");
+    const reversedStr: string[] = [];
 };
 
 // Test your function
