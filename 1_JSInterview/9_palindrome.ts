@@ -12,8 +12,8 @@ Example input: "rotator"
 Example output: true
 */
 
-function isPalindrome(str){
-    
+function isPalindrome(str) {
+    const splitStr: string[] = str.split("");
 };
 
 // Test your function
