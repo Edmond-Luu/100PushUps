@@ -23,7 +23,7 @@ function isPalindrome(str) {
             return false;
         };
     };
-    return false;
+    return true;
 };
 
 // Test your function
