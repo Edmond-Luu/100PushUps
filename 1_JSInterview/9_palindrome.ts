@@ -22,7 +22,7 @@ function isPalindrome(str) {
         if(splitStr[i] !== reversedStr[i]){
             return false;
         };
-    }
+    };
 };
 
 // Test your function
