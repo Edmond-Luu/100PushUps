@@ -26,7 +26,7 @@ const eggScrambleRecipe = [
 
 function removeDupesFromArray(arr) {
     const noDuplicatesSet = new Set(arr);
-    return noDuplicatesSet;
+    return [...noDuplicatesSet];
 };
 
 console.log(removeDupesFromArray(eggScrambleRecipe));
