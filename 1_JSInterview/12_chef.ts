@@ -26,6 +26,6 @@ const eggScrambleRecipe = [
 
 function removeDupesFromArray(arr){
 
-}
+};
 
 console.log(removeDupesFromArray(eggScrambleRecipe));
