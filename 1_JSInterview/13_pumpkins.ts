@@ -25,8 +25,8 @@ const kittyPrizes = [
 ];
 
 function flatten(arr){
- 
-}
+
+};
 
 console.log(flatten(kittyPrizes));
 console.log(flatten(kittyScores));
