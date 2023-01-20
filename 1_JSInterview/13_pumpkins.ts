@@ -25,7 +25,7 @@ const kittyPrizes = [
 ];
 
 function flatten(arr) {
-    return Array.isArray(arr);
+    const flatArr = [];
 };
 
 console.log(flatten(kittyPrizes));
