@@ -14,7 +14,7 @@ Example output: "abc12"
 const password = "9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23"; 
  
 function removeDupeChars(chars){
-    
+    const noDuplicates = new Set(password);
 };
 
 console.log(removeDupeChars(password));
