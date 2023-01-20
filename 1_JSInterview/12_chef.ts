@@ -22,7 +22,7 @@ const eggScrambleRecipe = [
     "🧀 cheese",
     "🥦 broccoli", 
     "🌶️ hot sauce"
-]
+];
 
 function removeDupesFromArray(arr){
 
