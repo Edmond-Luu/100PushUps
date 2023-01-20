@@ -15,17 +15,17 @@ Example output: [1, 4, 5, 4, 7, 6, 4, 3, 5]
 */
 
 const kittyScores = [
-    [39, 99, 76], 89, 98, [87, 56, 90], 
+    [39, 99, 76], 89, 98, [87, 56, 90],
     [96, 95], 40, 78, 50, [63]
 ];
 
 const kittyPrizes = [
     ["💰", "🐟", "🐟"], "🏆", "💐", "💵", ["💵", "🏆"],
-    ["🐟","💐", "💐"], "💵", "💵", ["🐟"], "🐟"
+    ["🐟", "💐", "💐"], "💵", "💵", ["🐟"], "🐟"
 ];
 
-function flatten(arr){
-
+function flatten(arr) {
+    return Array.isArray(arr);
 };
 
 console.log(flatten(kittyPrizes));
