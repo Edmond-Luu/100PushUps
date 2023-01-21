@@ -29,4 +29,4 @@ export default [
         price: 3.99,
         type: "savory",
     },
-]
+];
