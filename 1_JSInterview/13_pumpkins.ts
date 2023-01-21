@@ -25,7 +25,7 @@ const kittyPrizes = [
 ];
 
 function flatten(arr) {
-    const flatArr = [];
+    const flatArr: any[] = [];
     arr.forEach(element => {
         if (Array.isArray(element)) {
             element.forEach(item => flatArr.push(item));
