@@ -10,12 +10,12 @@ is lowercased with only letters and numbers.
 
 Example input: "aabbccb1212"
 Example output: "abc12"
-*/ 
-const password = "9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23"; 
- 
-function removeDupeChars(chars){
+*/
+const password = "9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23";
+
+function removeDupeChars(chars) {
     const noDuplicates = new Set(password);
-    return noDuplicates;
+    return [...noDuplicates].join("");
 };
 
 console.log(removeDupeChars(password));
