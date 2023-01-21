@@ -16,6 +16,6 @@ lowercase t and a capital T should be considered the same character).
 
 function countChars(str){
    
-}
+};
 
 console.log(countChars("Peggy Porth"));
