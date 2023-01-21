@@ -24,7 +24,7 @@ const kittyPrizes = [
     ["🐟", "💐", "💐"], "💵", "💵", ["🐟"], "🐟"
 ];
 
-function flatten(arr) {
+function flatten(arr: any[]) {
     const flatArr: any[] = [];
     arr.forEach(element => {
         if (Array.isArray(element)) {
