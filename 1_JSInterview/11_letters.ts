@@ -12,10 +12,10 @@ Example output: {p: 2, e: 1, g: 2, y: 1, o: 1, r: 1, t: 1, h: 1}
 Your function should NOT count spaces and should not be case sensitive (a
 lowercase t and a capital T should be considered the same character).
 
-*/ 
+*/
 
-function countChars(str){
-   
+function countChars(str) {
+    const counts = {};
 };
 
 console.log(countChars("Peggy Porth"));
