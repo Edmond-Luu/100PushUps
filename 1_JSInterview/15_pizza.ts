@@ -20,7 +20,7 @@ const gameNightFood = {
 }
 
 function findTheWinner(obj){
-
-}
+    
+};
 
 console.log(findTheWinner(gameNightFood));
