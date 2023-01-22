@@ -23,7 +23,7 @@ function findTheWinner(obj) {
     const foodArr = Object.keys(obj);
     const votesArr = Object.values(obj);
     const mostVotes = [...votesArr].sort((a, b) => b - a)[0];
-    return gameNightFood(votesArr.indexOf(mostVotes));
+    const foodWinner = foodArr[votesArr.indexOf(mostVotes)];
 };
 
 console.log(findTheWinner(gameNightFood));
