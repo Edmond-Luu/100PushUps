@@ -10,17 +10,17 @@ how many votes it received.
 
 Example input: {"🐈 cats": 19, "🐕 dogs": 17} 
 Example output: The winner is 🐈 cats with 19 votes!
-*/ 
+*/
 
 const gameNightFood = {
-    "🍕 pizza": 3, 
-    "🌮 tacos": 10, 
+    "🍕 pizza": 3,
+    "🌮 tacos": 10,
     "🥗 salads": 7,
     "🍝 pasta": 5
 }
 
-function findTheWinner(obj){
-    
+function findTheWinner(obj) {
+    const mostVotes = Object.values(obj).sort((a, b) => b - a)[0];
 };
 
 console.log(findTheWinner(gameNightFood));
