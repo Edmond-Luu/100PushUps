@@ -1,4 +1,4 @@
-import mediaData from "./data.js";
+import genreData from "./genreData.js";
 
 /* Find All Unique Tags 
 
