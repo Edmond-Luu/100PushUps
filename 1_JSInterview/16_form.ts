@@ -26,6 +26,6 @@ Read about toDateString() for info on formatting a readable date.
 */
 function transformData(data){
 
-}
+};
 
 console.log(transformData(userData));
