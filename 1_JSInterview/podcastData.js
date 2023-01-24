@@ -56,4 +56,4 @@ export default [
         rating: 9,
         paid: false
     },
-]
+];
