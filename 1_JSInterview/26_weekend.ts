@@ -1,4 +1,4 @@
-const podcasts = [
+const podcastArray = [
     {
         id: 1,
         title: "Scrimba Podcast",
@@ -58,44 +58,43 @@ const podcasts = [
     },
 ];
 
+/* 🌴 Save the Weekend 🌴
 
-/* Welcome Aboard Scrimba Airlines 
+Your best friend is a copywriter who writes product descriptions 
+for a living. You want to use your hacking skills to help them 
+automate their job so you both can spend the weekend on a 
+tropical island. 
 
-Our Scrimba Airlines in-flight entertainment package 
-includes a variety of podcasts. We need to add a feature that suggests
-podcasts to our patrons based on whether a flight is short or long. 
+Use array methods and the existing podcast data to write a function that
+can generate a description for each podcast. 
 
-Your sort function should take two arguments: the podcast data and
-flight length. If the flight is 60 minutes or less, sort the podcast list 
-from shortest to longest. If it's anything else, sort from longest
-to shortest. 
+Add the description as a new property on each podcast object, and return
+a new podcast array where each podcast has a description. 
 
-Your function shouldn't return anything. Instead log a numbered list 
-of the title and duration of 
-each podcast to the console, like this:
+Each description should look like this: 
+[
+    {
+        id: 1,
+        title: "Scrimba Podcast", 
+        ...
+        description: "Scrimba Podcast is a 50 minute education podcast hosted 
+        by Alex Booker."
+    }
+    ...
+]
 
-1. Crime Fan, 150 minutes
-2. Mythical Creatures, 99 minutes
-3. Crime Crime Crime, 70 minutes
-4. Coding Corner, 55 minutes
-5. Scrimba Podcast, 50 minutes
-6. Something about Witches, 35 minutes
+If the podcast has more than one host, you can display only the first host.
 
+Stretch goal: Display all three hosts in the description, seperated with commas: 
+
+Example description: "Coding Corner is a 55 minute education podcast hosted by Treasure Porth, Guil Hernandez, and Tom Chant."
 */
 
-function sortByDuration(data, flightLength) {
-    const selection: string[] = [];
-    if (flightLength <= 60) {
-        data.sort((a, b) => a.duration - b.duration);
-    } else {
-        data.sort((a, b) => b.duration - a.duration);
+function createDescriptionsFor(data) {
+    for (let i = 0; i < data.length; i++) {
+        data[i].description = `${data[i].title} is a ${data[i].duration} minute podcast hosted by ${data[i].hosts.join(", ").}`
     };
-    let count = 1;
-    data.forEach(movie => {
-        selection.push(`${count}. ${movie.title}, ${movie.duration} minutes`);
-        count++;
-    })
-    return selection;
+    return data
 };
 
-console.log(sortByDuration(podcasts, 60));
+console.log(createDescriptionsFor(podcastArray))

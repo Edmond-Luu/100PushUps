@@ -1,4 +1,35 @@
-import products from "./data.js";
+const data = [
+    {
+        item: "🍭",
+        price: 2.99,
+        type: "sweet",
+    },
+    {
+        item: "🍫",
+        price: 1.99,
+        type: "sweet",
+    },
+    {
+        item: "🥫",
+        price: 1.99,
+        type: "savory",
+    },
+    {
+        item: "🍬",
+        price: .89,
+        type: "sweet",
+    },
+    {
+        item: "🥦",
+        price: 3.99,
+        type: "savory",
+    },
+    {
+        item: "🍖",
+        price: 3.99,
+        type: "savory",
+    },
+];
 
 /*
    It's the day after Halloween 🎃 and all the candy is on sale!
@@ -17,6 +48,15 @@ import products from "./data.js";
     ]
 */
 
-function getSaleItems(data){
-    
+function getSaleItems(data) {
+    const shoppingCart = [];
+    data.forEach(element => {
+        shoppingCart.push({
+            item: element.item,
+            price: element.price
+        });
+    });
+    return shoppingCart;
 };
+
+console.log(getSaleItems(data));

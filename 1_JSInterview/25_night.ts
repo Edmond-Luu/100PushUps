@@ -1,4 +1,6 @@
-const podcasts = [
+import { hasOnlyExpressionInitializer } from "typescript";
+
+const podcastArr = [
     {
         id: 1,
         title: "Scrimba Podcast",
@@ -58,44 +60,43 @@ const podcasts = [
     },
 ];
 
+/* Night at the Scrimbies 
 
-/* Welcome Aboard Scrimba Airlines 
+It's time for the Scrimbies, a prestigious award show for podcast hosts.
+We need to assemble a list of podcast hosts so we can start handing out awards. 
 
-Our Scrimba Airlines in-flight entertainment package 
-includes a variety of podcasts. We need to add a feature that suggests
-podcasts to our patrons based on whether a flight is short or long. 
+Write a function that takes in the podcast data and
+returns a flat array of podcast hosts. There are quite a few ways to approach
+this, but try solving the problem using reduce(). 
 
-Your sort function should take two arguments: the podcast data and
-flight length. If the flight is 60 minutes or less, sort the podcast list 
-from shortest to longest. If it's anything else, sort from longest
-to shortest. 
+Once you have a flat array of hosts, write a second function to randomly assign each host a prize
+from the awards array. 
 
-Your function shouldn't return anything. Instead log a numbered list 
-of the title and duration of 
-each podcast to the console, like this:
-
-1. Crime Fan, 150 minutes
-2. Mythical Creatures, 99 minutes
-3. Crime Crime Crime, 70 minutes
-4. Coding Corner, 55 minutes
-5. Scrimba Podcast, 50 minutes
-6. Something about Witches, 35 minutes
+Example output: ["🏆 Alex Booker", "⭐ Bob Smith", "💎 Camilla Lambert" ...] 
 
 */
+const awards = ["🏆", "⭐", "💎", "🥇", "👑"];
 
-function sortByDuration(data, flightLength) {
-    const selection: string[] = [];
-    if (flightLength <= 60) {
-        data.sort((a, b) => a.duration - b.duration);
-    } else {
-        data.sort((a, b) => b.duration - a.duration);
+function getHosts(data) {
+    const hosts = []
+    for (let item of data) {
+        item.hosts.forEach(host => {
+            hosts.push(host);
+        });
     };
-    let count = 1;
-    data.forEach(movie => {
-        selection.push(`${count}. ${movie.title}, ${movie.duration} minutes`);
-        count++;
-    })
-    return selection;
+    return hosts;
 };
 
-console.log(sortByDuration(podcasts, 60));
+function assignAwards(data) {
+    const hosts = getHosts(data);
+    const hostAward = [];
+    for (let i = 0; i < hosts.length; i++) {
+        const randomAward = awards[Math.floor(Math.random() * awards.length)];
+        hostAward.push(`${randomAward} ${hosts[i]}`)
+    };
+    return hostAward;
+};
+
+
+console.log(getHosts(podcastArr));
+console.log(assignAwards(podcastArr));

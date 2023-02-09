@@ -1,5 +1,3 @@
-import podcasts from "./data.js";
-
 /* Find Free Podcasts 
 
 We have a list of podcasts and need the ability to filter by only
@@ -20,8 +18,80 @@ Expected output:
 ]
 */
 
-function getFreePodcasts(data){
-   
-}
 
-console.log(getFreePodcasts(podcasts))
+const podcastData = [
+    {
+        id: 1,
+        title: "Scrimba Podcast",
+        duration: 50,
+        tags: ["education", "jobs", "technology"],
+        hosts: ["Alex Booker"],
+        rating: 10,
+        genre: "education",
+        paid: false
+    },
+    {
+        id: 2,
+        title: "Crime Fan",
+        duration: 150,
+        tags: ["crime", "entertainment", "mature"],
+        hosts: ["Bob Smith", "Camilla Lambert"],
+        genre: "true crime",
+        rating: 5,
+        paid: true
+    },
+    {
+        id: 3,
+        title: "Mythical Creatures",
+        duration: 99,
+        tags: ["entertainment", "general", "unicorns"],
+        hosts: ["Esmerelda Shelley", "Duke Dukington", "Felix the Cat"],
+        genre: "fantasy",
+        rating: 8,
+        paid: true
+    },
+    {
+        title: "Crime Crime Crime",
+        duration: 70,
+        tags: ["crime", "entertainment", "mature"],
+        hosts: ["Jessica Jones", "Humphrey Bogart", "Inspector Gadget"],
+        genre: "true crime",
+        rating: 6,
+        paid: true
+    },
+    {
+        title: "Something about Witches",
+        duration: 35,
+        tags: ["fantasy", "entertainment"],
+        hosts: ["Frewin Wyrm", "Evanora Highmore"],
+        genre: "fantasy",
+        rating: 8,
+        paid: false
+    },
+    {
+        title: "Coding Corner",
+        duration: 55,
+        tags: ["education", "jobs", "technology"],
+        hosts: ["Treasure Porth", "Guil Hernandez", "Tom Chant"],
+        genre: "education",
+        rating: 9,
+        paid: false
+    },
+];
+
+
+function getFreePodcasts(data) {
+    const dataArr = [];
+    data.forEach(element => {
+        if (element.paid === false) {
+            dataArr.push({
+                title: element.title,
+                rating: element.rating,
+                paid: element.paid
+            });
+        };
+    });
+    return dataArr;
+};
+
+console.log(getFreePodcasts(podcastData))
