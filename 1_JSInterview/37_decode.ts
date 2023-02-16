@@ -31,7 +31,7 @@ function decode(str) {
             }
         } else {
             decodedStr.push(letter);
-        }
+        };
     };
     return decodedStr.join("");
 };
