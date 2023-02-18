@@ -12,7 +12,7 @@ function encode(str) {
             }
         } else {
             encodedStr.push(letter);
-        }
+        };
     };
     return encodedStr.join("");
 };
@@ -28,7 +28,7 @@ function decode(str) {
                 decodedStr.push(alphabet[newIndex]);
             } else {
                 decodedStr.push(alphabet[alphabet.length - 1]);
-            }
+            };
         } else {
             decodedStr.push(letter);
         };
