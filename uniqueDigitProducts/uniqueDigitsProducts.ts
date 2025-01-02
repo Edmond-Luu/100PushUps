@@ -26,6 +26,7 @@ export function uniqueDigitProducts(a: number[]): number {
             products.push(product);
         };
     });
+    return products.length;
 };
 
 console.log(uniqueDigitProducts([2, 8, 121, 42, 222, 23]));
